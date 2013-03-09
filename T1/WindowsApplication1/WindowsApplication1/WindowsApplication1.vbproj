@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F61188F7-F262-4FF4-A386-95F62809BECA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Operador Turistico</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Operador Turistico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Operador Turistico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.vb">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Equipamento.Designer.vb">
+      <DependentUpon>Equipamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras.Designer.vb">
+      <DependentUpon>Extras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Epocas.Designer.vb">
+      <DependentUpon>Epocas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Epocas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estados.Designer.vb">
+      <DependentUpon>Estados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dias.Designer.vb">
+      <DependentUpon>Dias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facilidade.Designer.vb">
+      <DependentUpon>Facilidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facilidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alojamento.Designer.vb">
+      <DependentUpon>Alojamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alojamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel.Designer.vb">
+      <DependentUpon>Hotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido.Designer.vb">
+      <DependentUpon>Pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regioes.Designer.vb">
+      <DependentUpon>Regioes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Regioes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Equipamento.resx">
+      <DependentUpon>Equipamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras.resx">
+      <DependentUpon>Extras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Epocas.resx">
+      <DependentUpon>Epocas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estados.resx">
+      <DependentUpon>Estados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dias.resx">
+      <DependentUpon>Dias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facilidade.resx">
+      <DependentUpon>Facilidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alojamento.resx">
+      <DependentUpon>Alojamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel.resx">
+      <DependentUpon>Hotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido.resx">
+      <DependentUpon>Pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regioes.resx">
+      <DependentUpon>Regioes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
